@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Fomulario</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <h1>Fomulario</h1>
+            <div class="menu-burguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="formValid">
+        <div class="container">
+            <h2>Fomulario de Mask</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="NomeCompleto" aria-placeholder="Digite deu nome completo">Digite se nome
+                        completo</label>
+                    <input id="NomeCompleto" type="text" name="NomeCompleto" placeholder="Digite deu nome completo">
+                </div>
+                <div class="form-campo">
+                    <label for="e-mail">Digite seu E-mail</label>
+                    <input id="e-mail" type="text" name="e-mail" placeholder="Digite seu E-mail">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Digite seu numero</label>
+                    <input id="telefone" type="text" name="telefone" placeholder="Digite seu numero">
+                </div>
+                <div class="form-campo">
+                    <label for="Cpf">Digite seu CPF</label>
+                    <input id="Cpf" type="text" name="Cpf" placeholder="Digite o CPF">
+                </div>
+                <div class="form-campo">
+                    <label for="Endereço">Qual Endereço</label>
+                    <input id="Endereço" type="text" name="Endereço" placeholder="Qual o Endereço">
+                </div>
+                <div class="form-campo">
+                    <label for="Cep">Digite cep</label>
+                    <input id="Cep" type="text" name="Cep" placeholder="Qual o cep">
+                </div>
+                <button type="submit"> Enviar </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/messages_pt_BR.min.js"></script>
+
+    
+
+</body>
+
+</html>
+
+<!--
+    Crie um formulário de cadastro, este formulário
+deverá conter os campos: nome completo, e-mail,
+telefone, CPF, endereço completo e CEP; 
+
+• Utilize o plugin jQuery Mask Plugin para aplicar
+máscara aos campos CPF, telefone e CEP;
+
+• Crie uma branch chamada
+exercicio_plugins_jquery no repositório do curso e
+nos envie o link através da plataforma.-->
