@@ -1,12 +1,14 @@
 
+
+$(document).ready(function () {
     $('#telefone').mask('(00) 0 0000-0000')
     $('#Cep').mask('0 0000-000')
     $('#Cpf').mask('000-000-000-00')
 
     $('formValid').validate({
         rules: {
-            nome:{
-                required:true
+            nome: {
+                required: true
             },
             email: {
                 required: true,
@@ -14,27 +16,29 @@
             },
             telefone: {
                 required: true,
-                Number:true
+                Number: true
             },
             Cep: {
                 required: true,
-                Number:true
+                Number: true
             },
-            Cpf:{
+            Cpf: {
                 required: true,
                 Number: true
             }
         },
-        messages:{
-            nome:'Por favor, insira o seu nome'
+        messages: {
+            nome: 'Por favor, insira o seu nome'
         },
-        submitHandler: function(form){
+        submitHandler: function (form) {
             console.log(form)
         },
-        invalidHandler: function(evento, validador){
+        invalidHandler: function (evento, validador) {
             let camposIncorretos = validador.numeberOfInvalids();
-            if (camposIncorretos){
+            if (camposIncorretos) {
                 alert(`Existem ${camposIncorretos} campos incorretos`)
             }
         }
     })
+
+})
